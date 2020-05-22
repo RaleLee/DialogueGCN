@@ -1,0 +1,7 @@
+.vscode
+dailydialog
+IEMOCAP_features
+mastodon
+.idea
+*.sh
+preprocess_mastodon1.py
