@@ -121,7 +121,9 @@ if __name__ == '__main__':
     
     for i, label in enumerate(all_emotion_labels):
         emotion_label_encoder[label] = i
+        print(str(i) + " " + str(label))
         emotion_label_decoder[i] = label
+        print(str(emotion_label_encoder[label]) + " " + str(emotion_label_decoder[i]))
 
     # pickle.dump(act_label_encoder, open('dailydialog/act_label_encoder.pkl', 'wb'))
     # pickle.dump(act_label_decoder, open('dailydialog/act_label_decoder.pkl', 'wb'))
@@ -227,7 +229,7 @@ if __name__ == '__main__':
         df = all_data[all_data['conv_id'] == item]
         
         convSpeakers[item] = list(df['speaker'])
-        convInputSequence[item] = df['sequence']
+        convInputSequence[item] = list(df['sequence'])
         if not flag:
             print(type(df['sequence']))
             print(df['sequence'])
@@ -239,7 +241,7 @@ if __name__ == '__main__':
         convEmotionLabels[item] = list(df['encoded_emotion_label'])
         
     pickle.dump([convSpeakers, convInputSequence, convActLabels, convEmotionLabels,
-                 train_conv_ids, test_conv_ids, valid_conv_ids], open('dailydialog/daily_dialogue_bert.pkl', 'wb'))
+                 train_conv_ids, test_conv_ids, valid_conv_ids], open('dailydialog/daily_dialogue_bert2.pkl', 'wb'))
     
     
     ## save pretrained embedding matrix ##
