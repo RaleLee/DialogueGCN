@@ -5,7 +5,7 @@ Use Bert base to preprocess the sentences.
 Based on [DialogueGCN](https://github.com/SenticNet/conv-emotion/tree/master/DialogueGCN)
 
 
-Because the owner of conv-emotion hasn't replied any issue since February. Welcome pr and issues!
+Welcome pr and issues!
 
 # Paper Approach
 See preprocess_dailydialog2.py and train_daily_feature.py 
