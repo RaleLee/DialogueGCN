@@ -5,3 +5,4 @@ mastodon
 .idea
 *.sh
 preprocess_mastodon1.py
+*.log
