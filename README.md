@@ -31,12 +31,13 @@ The bibtex are listed below:
   pages={154--164},
   year={2019}
 }
-@misc{qin2020cogat,
-      title={Co-GAT: A Co-Interactive Graph Attention Network for Joint Dialog Act Recognition and Sentiment Classification}, 
-      author={Libo Qin and Zhouyang Li and Wanxiang Che and Minheng Ni and Ting Liu},
-      year={2020},
-      eprint={2012.13260},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{qin2021co,
+  title={Co-GAT: A Co-Interactive Graph Attention Network for Joint Dialog Act Recognition and Sentiment Classification},
+  author={Qin, Libo and Li, Zhouyang and Che, Wanxiang and Ni, Minheng and Liu, Ting},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={35},
+  number={15},
+  pages={13709--13717},
+  year={2021}
 }
 </pre>
